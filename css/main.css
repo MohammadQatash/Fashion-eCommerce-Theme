@@ -212,6 +212,7 @@
         display: none;
     }
     .story-behind-content {
+        width: 100%;
         align-items: center !important;
         margin-left: 0 !important;
     }
