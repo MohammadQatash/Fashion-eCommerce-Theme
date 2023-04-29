@@ -170,3 +170,81 @@ hr {
 .price {
     color: var(--primary-color);
 }
+/* login & register popup */
+.popup-container#blur.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    transition: 0.5s;
+    padding: 20px;
+    z-index: 9999;
+}
+#popup {
+    display: none;
+}
+.popup-container#blur.active #popup {
+    display: block;
+    background-color: var(--white-color);
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.close-popup:hover .svg-icon path {
+    fill: var(--primary-color);
+}
+.create-account {
+    font-size: 30px;
+}
+.form-container label {
+    color:  var(--secondary-color);
+    text-transform: uppercase;
+}
+.form-container input {
+    font-size: 14px;
+    display: block;
+    padding: 10px 30px 10px 5px;
+    border: transparent;
+    border-bottom: 2px solid var(--gray-lighten1-color);
+    width: 100%;
+}
+.form-container input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+.form-container .submit {
+    background: var(--secondary-color);
+    border: 0;
+    padding: 15px 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.1s ease-in-out;
+}
+.form-container .submit:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.form-container .password-rules {
+    font-size: 10px;
+}
+.form-container .error-message, .login-error-message {
+    color: red;
+    font-size: 12px;
+    height: 25px;
+}
+@media (max-width: 1199px) {
+    .popup-container#blur.active #popup {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    .popup-container#blur.active #popup {
+        width: 100%;
+    }
+}
