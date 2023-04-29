@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #d3995f;
+    --secondary-color: #292929;
+    --white-color: #ffff;
+    --gray-lighten4-color: #fdfdfd;
+    --gray-lighten3-color: #fcfcfc;
+    --gray-lighten2-color: #f9f9f9;
+    --gray-lighten1-color: #686868;
+    --gray-dark1-color: #2a2a2a;
+    --side-menu-color: #c3c2c2e6;
+    --px-12: 12px;
+    --px-80: 80px;
+    --icon-size: 11px;
+    --icon-color: #ffff;
+    --grid-row: 400px;
+    --gap-size: 15px;
+    --checkbox-color: #000;
+}

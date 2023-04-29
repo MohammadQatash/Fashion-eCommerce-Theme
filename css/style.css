@@ -1,0 +1,14 @@
+/* Lora Font */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* Globl Rules */
+@import url('./globalRules.css');
+/* Utilities */
+@import url('./utilities.css');
+/* Variables */
+@import url('./variables.css');
+/* Header */
+@import url('./header.css');
+/* Cash Bar */
+@import url('./cashBar.css');
+/* Footer */
+@import url('./footer.css');

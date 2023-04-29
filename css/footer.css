@@ -1,0 +1,89 @@
+footer {
+    background-color: var(--secondary-color);
+}
+.footer-info {
+    flex-basis: 33.33%;
+}
+.footer-p, .contact-us-p {
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--white-color);
+    font-family: "lora", "sans-serif";
+}
+.created-by, .project-name {
+    font-size: 13px;
+    color: var(--white-color);
+}
+.project-name .gabooo {
+    color: var(--primary-color);
+}
+.links-shopping {
+    flex-basis: 33.33%;
+}
+.footer-list:before {
+    content: attr(aria-label);
+    font-size: 15px;
+    color: var(--gray-lighten4-color);
+    display: inline-block;
+    padding-bottom: 11px;
+}
+.footer-list li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.footer-list li a {
+    font-size: 13px;
+    color: var(--white-color);
+}
+.footer-list li a:hover {
+    color: var(--primary-color);
+}
+.footer-list li:last-child {
+    padding-bottom: 0;
+}
+.contact-us-content {
+    flex-basis: 33.33%;
+}
+.contact-us-head {
+    color: var(--gray-lighten4-color);
+    padding-bottom: 13px;
+}
+.contact-us-p {
+    font-size: 13px;
+}
+.contact-us-btn {
+    color: var(--gray-lighten4-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: all 0.4s;
+}
+.contact-us-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.social-media-links a:hover .svg-icon path {
+    fill: var(--primary-color);
+}
+@media (max-width: 767px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-info, .links-shopping, .contact-us-content {
+        flex-basis: 100%;
+    }
+    .footer-info, .contact-us-content {
+        text-align: center;
+    }
+    .social-media-links {
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    .social-media-links a:nth-child(2) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .social-media-links a:nth-child(3) {
+        margin-right: 30px;
+    }
+}
