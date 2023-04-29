@@ -34,9 +34,6 @@
 .hero {
     background-color: var(--gray-lighten2-color);
 }
-.hero-section {
-    gap: var(--gap-size);
-}
 .hero-content {
     padding-top: 55px;
     padding-bottom: 62px;
