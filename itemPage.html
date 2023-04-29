@@ -42,8 +42,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="login cursor">Login</div>
-                        <div class="Register cursor">Register</div>
+                        <div onclick="toggle('login')" class="login cursor">Login</div>
+                        <div onclick="toggle('register')" class="Register cursor">Register</div>
                     </div>
                 </div>
             </div>
@@ -300,6 +300,101 @@
                 </div>
             </div>
         </section>
+        <!-- Login & Register popup -->
+        <div class="popup-container" id="blur">
+            <div class="d-flex flex-column" id="popup">
+                <div onclick="toggle()" id="closePopup" class="close-popup cursor text-end mb-20" style="--icon-size:25px; --icon-color:#2a2a2a">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path fill="none" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+                        c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+                        c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+                        c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </div>
+                <!-- Register -->
+                <div id="registerPopup">
+                    <div class="create-account">Create an Account</div>
+                    <div class="form-container pa-20">
+                        <form name="registerForm">
+                            <!-- User Name -->
+                            <label for="username">User Name *</label>
+                            <input
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="John" 
+                                required
+                            />
+                            <p class="error-message"></p>
+                            <!-- Email -->
+                            <label for="e-mail">E-mail address *</label>
+                            <input 
+                                type="text" 
+                                id="e-mail" 
+                                placeholder="john@gamil.com" 
+                                required
+                            />
+                            <p class="error-message"></p>
+                            <!-- Phone Number -->
+                            <label for="phoneNumber">Phone Number</label>
+                            <input 
+                                type="text" 
+                                id="phoneNumber" 
+                                maxlength="9" 
+                                pattern=".{9,}"
+                                required 
+                                title="9 characters length"
+                                placeholder="0798888888"
+                            />
+                            <p class="error-message"></p>
+                            <!-- Password -->
+                            <label for="password">Password *</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                pattern=".{8,}" 
+                                required 
+                                title="8 characters minimum"
+                            />
+                            <p class="error-message"></p>
+                            <p class="password-rules">Your password should contain at least 8 characters and 1 number.</p>
+                            <!-- Submit -->
+                            <input class="submit cursor mt-20" type="submit" value="submit" name="submit" onclick="formValidation()" />
+                        </form>
+                    </div>
+                </div>
+                <!-- Login -->
+                <div id="loginPopup">
+                    <div class="create-account">Sign in</div>
+                    <div class="form-container pa-20">
+                        <form name="registerForm">
+                            <!-- Email -->
+                            <label for="e-mail">E-mail address *</label>
+                            <input 
+                                type="text" 
+                                id="e-mail" 
+                                placeholder="john@gamil.com" 
+                                required
+                            />
+                            <p class="login-error-message"></p>
+                            <!-- Password -->
+                            <label for="password">Password *</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                pattern=".{8,}" 
+                                required 
+                                title="8 characters minimum"
+                            />
+                            <p class="login-error-message"></p>
+                            <p class="password-rules">Your password should contain at least 8 characters and 1 number.</p>
+                            <!-- Submit -->
+                            <input class="submit cursor mt-20" type="submit" value="sign in" name="submit" onclick="loginFormValidation()" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer>
